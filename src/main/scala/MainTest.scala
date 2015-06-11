@@ -5,7 +5,9 @@ import slick.driver.PostgresDriver.api._
 /**
  * Class .MainTest
  * Created by vishnu667 on 12/6/15.
- * http://queirozf.com/entries/scala-slick-simple-example-on-connecting-to-a-postgresql-database
+ *
+ * TODO check  http://queirozf.com/entries/scala-slick-simple-example-on-connecting-to-a-postgresql-database
+ *
  */
 object MainTest {
 
