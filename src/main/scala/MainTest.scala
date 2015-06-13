@@ -20,13 +20,11 @@ object MainTest {
   def main(args: Array[String]) {
     println("Starting test application")
 
-    val connectionUrl = "jdbc:postgresql://localhost/my-db?user=postgres&password=postgres"
+    val connectionUrl = "jdbc:postgresql://localhost/postgres?user=postgres&password=postgres"
 
     Database.forURL(connectionUrl, driver = "org.postgresql.Driver") withSession {
       implicit session =>
         val users = TableQuery[Users]
-
-        users.schema.create
 
     }
     println("Exiting test application")
